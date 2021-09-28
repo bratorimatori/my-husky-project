@@ -8,7 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "echo \"[Husky] commit-msg\"",
+      "pre-push": "echo \"[Husky] pre-push\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "dependencies": {
+    "husky": "^7.0.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
